@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- This document holds tags about:Textforms; Formating; qouting and citation; 
+    HTML colors; links; Images and background images.-->
 </head>
 <body>
     <!-- text forms: -->
@@ -171,18 +173,58 @@ a:active {
     <img src="URL" alt="Alternative text" style="width:500px;height:600px;"><!-- You can also change the size of the picture-->
     <!-- If you put it in <a> elements it bekames a link(Button)-->
         
-<!--APNG	Animated Portable Network Graphics	.apng
-    GIF	Graphics Interchange Format	.gif
-    ICO	Microsoft Icon	.ico, .cur
+<!--APNG	Animated Portable Network Graphics	    .apng
+    GIF	    Graphics Interchange Format	            .gif
+    ICO	    Microsoft Icon	                        .ico, .cur
     JPEG	Joint Photographic Expert Group image	.jpg, .jpeg, .jfif, .pjpeg, .pjp
-    PNG	Portable Network Graphics	.png
-    SVG	Scalable Vector Graphics	.svg-->
+    PNG	    Portable Network Graphics	            .png
+    SVG	    Scalable Vector Graphics	            .svg-->
 
-
-
-
-
-
+<!--image Maps-->
+    <img src="img_gmap.gif" alt="Planets" usemap="#planetmap"><!-- it needs to begin with a #-->
+    <map name="planetmap"> <!-- the name of the map must match the usemap attribute of the image-->
+      <area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm">
+      <area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm">
+      <area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm">
+    </map>
+    
+    <!-- you need to chose one of the shapes (rect, circle, poly and default(means the entire image)) -->
+    <!--you can also make something like this:-->
+    <area shape="poly" coords="140,121,181,116,204,160,204,222,191,270,140,
+    329,85,355,58,352,37,322,40,259,103,161,128,147" href="croissant.htm">
+<br>
+<hr>
+    <!--background Images:-->
+    <!--You can use images as bachgrouds for elements:-->
+    <p style="background-image: url('your_image.jpg');">
+        And your Tetx here
+    </p><!--thats one way-->
+    <br>
+    <style>
+        p {
+            background-image: url('your_image.jpg');
+        }
+    </style><!--thats another way to do it-->
+    <!--You can also set a background color as a fallback and on other elements
+    The image it selfe will repet it self vertacly as horizontay till it fills the entire area
+    Thats how you stop that:-->
+    <style>
+        body {
+            background-image: url('your_image.jpg');
+            background-repeat: no-repeat;
+        }
+    </style>
+    <br>
+    <hr>
+    <!-- you can also make one picture to cover the entire background:-->
+    <style>
+        body {
+            background-image: url('your_image.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style><!--this way the photo will hold his position-->
 
 </body>
 </html>
