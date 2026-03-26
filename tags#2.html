@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html tags #2</title>
+    <!--This Document is about the Picture element; Favicon; listen -->
+</head>
+<body>
+
+<!--The Picture Element:-->
+    <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg">
+        <source media="(min-width: 450px)" srcset="img_car.jpg">
+        <img src="img_guitar.jpg" alt="Guitar" style="width:auto;">
+    </picture><!--The Picture element allows you to define different images for different devices or screen sizes. 
+The browser will choose the most suitable image based on the media queries defined in the source elements. 
+If none of the media queries match, the img element will be used as a fallback.-->
+
+<!-- How to add a Favicon on your HTML Webbsite:
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>My Page Title</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+-->
+<br>
+<hr>
+<!--Table Elements: -->
+    <table style="width:100%; border: 1px solid black;">
+        <tr><!--stands for table row -->
+            <th>Firstname</th><!--stands for table header-->
+            <th>Lastname</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Jill</td><!--stands for table data-->
+            <td>Smith</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+        </tr>
+    </table>
+
+    <!--unordered list-->
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul><!--They are showed with a bullet point-->
+
+    <!--ordered list-->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol><!--They are showed with numbers-->
+
+</body>
+</html>
